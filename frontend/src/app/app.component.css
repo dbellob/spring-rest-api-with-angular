@@ -1,0 +1,12 @@
+.example-container {
+    width: 99%;
+    height: 94%;
+    margin: 10px;
+    border: 1px solid #555;
+  }
+
+  .text-inside-grid {
+    position: absolute;
+    left: 5px;
+    align-self: flex-start;
+  }

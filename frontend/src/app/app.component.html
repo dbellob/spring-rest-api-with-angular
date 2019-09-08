@@ -1,0 +1,53 @@
+<mat-grid-list cols="5" rowHeight="80px">
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <app-image></app-image>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <mat-divider [vertical]="true"></mat-divider>
+
+      <app-text-container></app-text-container>
+
+
+
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <mat-divider [vertical]="true"></mat-divider>
+
+      <app-text-container></app-text-container>
+<mat-divider [vertical]="true"></mat-divider>
+
+
+
+  </mat-grid-tile>
+
+</mat-grid-list>
+
+<mat-grid-list cols="5" rowHeight="25px">
+  <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'gray'">
+    <app-date-time></app-date-time>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="4" [rowspan]="1" [style.background]="'gray'">
+    <app-my-status></app-my-status>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="5" rowHeight="500px" style="align-self: baseline">
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+     
+      <div class="text-inside-grid">   
+         <app-menu></app-menu>
+         
+</div>  
+        
+
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="4" [rowspan]="1">
+    <app-sponsorship-letters></app-sponsorship-letters>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="5" rowHeight="35px">
+  <mat-grid-tile [colspan]="5" [rowspan]="1" [style.background]="'gray'">
+    <app-footer></app-footer>
+  </mat-grid-tile>
+</mat-grid-list>
