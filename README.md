@@ -1,11 +1,11 @@
-# spring-rest-api-with-angular
+
 ## Backend
 ### Descripción
 Aplicación desarrollada con Spring Boot (JPA, RESTController, JDBC, Maven), donde se exponen los siguientes endpoints que son consumidos por el cliente (proyecto Angular):
 
   | Endpoint | Descripción |Posibles valores para path param |
   | ------ | ------ | ------|
-    | /api/languaje/ | HTTP GET para traer desde MYSQL el listado de idiomas.  | No aplica dado que se traen todos los idiomas almacenados en base de datos. |
+  | /api/languaje/ | HTTP GET para traer desde MYSQL el listado de idiomas.  | No aplica dado que se traen todos los idiomas almacenados en base de datos. |
   | /api/letter/{languajeId} | HTP GET para traer desde MYSQL el listado de cartas asociadas a un idioma.   | Número entre 1 y 5 que representa uno de los idiomas disponibles para obtener el listado de cartas.|
 
 La estructura de la aplicación se basa en tres capas:
@@ -53,7 +53,7 @@ Dentro de la carpeta raíz del proyecto (frontend) ejecutar los siguientes coman
 $ npm install
 $ npm start
 
-Si todo es correcto la terminal indicará el build success y la aplicación se ejecutará sobre el puerto 4200 (abrir el navegador en la url localhost:4200).
+Si todo es correcto la aplicación indicará el build success y se ejecutará sobre el puerto 4200.
 Se asume que el PC donde se va a ejecutar cuenta con NodeJs y Angular CLI instalados en las versiones antes mencionadas.
 
 ## Base de datos
@@ -61,4 +61,4 @@ Se asume que el PC donde se va a ejecutar cuenta con NodeJs y Angular CLI instal
 
 Un plus adicional que tiene esta solución es que la data del listado de idiomas y del listado de cartas está alojada en una base de datos MYSQL dentro de un servidor remoto de pruebas (remotemysql.com), por tanto no se requiere realizar nada sobre esta capa.
 
-***Nota: Tener presente que la base de datos al estar alojada en un servidor gratuito, se evidencia que los tiempos de respuesta a veces son excesivamente altos, así mismo tambien se evidencia que a veces genera errores que en el cliente aparecen con el código 500, esto al no poder establecer conexión con la misma.
+Nota: Tener presente que la base de datos al estar alojada en un servidor gratuito, se evidencia que los tiempos de respuesta a veces son excesivamente altos, así mismo tambien se evidencia que a veces genera errores que en el cliente aparecen con el código 500.
