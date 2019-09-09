@@ -1,1 +1,44 @@
-<p>sponsorship-letters works!</p>
+<div>
+    <h3>Cartas de Patrocinio</h3>
+</div>
+<app-text></app-text>
+
+<div>
+    <h4>A quien va dirigida</h4>
+    <mat-radio-group>
+        <div>
+            <mat-radio-button [value]="1" (change)="radioChange($event)" checked>A quien pueda interesar</mat-radio-button>
+        </div>
+        <div>
+            <mat-radio-button [value]="2" (change)="radioChange($event)">A esta persona</mat-radio-button>
+        </div>
+    </mat-radio-group>
+</div>
+<div *ngIf="lettersListOptionIsSelected()">
+    <app-letters-by-language></app-letters-by-language>
+</div>
+<div *ngIf="!lettersListOptionIsSelected()">
+    
+        <form >
+                <br>
+                <div>
+                  <label for="name">
+                    Nombres
+                  </label>
+                  <input id="name" type="text" formControlName="name">
+                </div>
+              <br>
+                <div>
+                  <label for="address">
+                    Apellidos
+                  </label>
+                  <input id="address" type="text" formControlName="address">
+                </div>
+                <br>
+
+                <button class="button" type="submit" disabled>Enviar</button>
+              ...TODO Form
+              </form>
+
+
+</div>

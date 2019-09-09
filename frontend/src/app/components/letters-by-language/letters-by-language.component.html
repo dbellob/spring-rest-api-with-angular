@@ -1,0 +1,24 @@
+<div>
+    <h4>¿En que idioma?</h4>
+    <mat-radio-group>
+        <div *ngFor="let language of languajeList">
+            <mat-radio-button [value]="language.id" (change)="radioChange($event)">{{language.label}}
+            </mat-radio-button>
+        </div>
+    </mat-radio-group>
+</div>
+
+
+<div>
+    <h4>¿Cuál Carta?</h4>
+    <table>
+        <tr *ngFor="let language of letterList">
+            <td>{{language.title}}
+            </td>
+            <td><button mat-button>Ver</button>
+            </td>
+            <td><button mat-button>Descargar</button>
+            </td>
+        </tr>
+    </table>
+</div>
